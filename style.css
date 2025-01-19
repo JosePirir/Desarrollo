@@ -1,0 +1,425 @@
+/*body {
+      margin: 0;
+      overflow-y: scroll;
+      height: 100vh;
+      scroll-behavior: smooth;
+}
+
+.navbar{    
+    background-color: rgb(16, 16, 138);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0; left: 0;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+main{
+    margin: 0;
+    scroll-snap-type: y mandatory;
+}
+
+.divisionC{
+    scroll-snap-align: start;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.divisionC:nth-child(odd) {
+      background-color: rgb(43, 129, 187);
+    }
+
+.divisionC:nth-child(even) {
+      background-color: #44baff;
+    }
+
+
+#first{
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+#second{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;    
+}
+
+
+#second div{
+    flex: 1 1 0;
+    width: 0;
+}
+
+#second h2{
+    flex:none;
+    width: 100%;
+}
+
+
+#third{
+    gap: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+
+#third div{
+    flex: 1 1 0;
+    width: 0;
+}
+
+#fourth{
+    gap: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#fourth div{
+    flex: 1 1 0;
+    width: 0;
+}
+
+#fifth{
+    gap: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#fifth div{
+    flex: 1 1 0;
+    width: 0;
+}
+
+#sixth{
+    gap: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#sixth div{
+    flex: 1 1 0;
+    width: 0;
+}
+
+#seventh{
+    gap: 40px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+#first,
+#second,
+#third,
+#fourth,
+#fifth,
+#sixth,
+#seventh {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#second div,
+#third div,
+#fourth div,
+#fifth div,
+#sixth div {
+    flex: 1 1 calc(50% - 40px);
+    max-width: 500px; 
+    text-align: center; 
+}
+
+#seventh {
+    flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+    .divisionC {
+        flex-direction: column;
+    }
+
+    #second div,
+    #third div,
+    #fourth div,
+    #fifth div,
+    #sixth div {
+        flex: 1 1 100%;
+    }
+
+    #first {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #third {
+        flex-direction: column-reverse;
+    }
+
+    #navbarNav ul {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .divisionC {
+        gap: 20px;
+    }
+
+    #second div,
+    #third div,
+    #fourth div,
+    #fifth div,
+    #sixth div {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (min-width: 1025px) {
+    #second div,
+    #third div,
+    #fourth div,
+    #fifth div,
+    #sixth div {
+        flex: 1 1 calc(25% - 20px); 
+    }
+}
+*/
+
+body {
+    margin: 0;
+}
+
+.navbar{    
+    background-color: rgb(16, 16, 138);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0; left: 0;
+}
+
+main{
+    margin: 0;
+}
+
+/*.divisionC {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}*/
+
+
+
+.divisionC:nth-child(odd) {
+    background-color: rgb(105, 188, 243);
+  }
+
+.divisionC:nth-child(even) {
+    background-color: rgb(243, 195, 105);
+  }
+
+
+#first{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    display: flex;
+    flex-wrap: wrap-reverse; /* Envuelve en reversa */
+    padding: 0 10%; /* Espaciado horizontal */
+    align-items: center; /* Alinea verticalmente el contenido */
+    gap: 15px; /* Ajusta el espacio entre elementos */
+    padding-top: 10%;
+}
+
+#first{
+    flex: 1 1 calc(50% - 15px); /* Ajusta el tamaño de las columnas */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    padding: 10px; /* Espaciado interno */
+    /*border: 1px solid #ccc; /* Opcional: para visualizar los límites */
+    /*background-color: #f9f9f9; /* Fondo para diferenciar las secciones */
+}
+
+#third{
+    display: flex;
+    flex-wrap: wrap-reverse; /* Envuelve en reversa */
+    padding: 0 10%; /* Espaciado horizontal */
+    align-items: center; /* Alinea verticalmente el contenido */
+    gap: 15px; /* Ajusta el espacio entre elementos */
+}
+
+#third > div {
+    flex: 1 1 calc(50% - 15px); /* Ajusta el tamaño de las columnas */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    padding: 10px; /* Espaciado interno */
+    /*border: 1px solid #ccc; /* Opcional: para visualizar los límites */
+    /*background-color: #f9f9f9; /* Fondo para diferenciar las secciones */
+}
+
+#fourth{
+    display: flex;
+    flex-wrap: wrap; /* Envuelve en reversa */
+    padding: 0 10%; /* Espaciado horizontal */
+    align-items: center; /* Alinea verticalmente el contenido */
+    gap: 15px; /* Ajusta el espacio entre elementos */
+}
+
+#fourth > div {
+    flex: 1 1 calc(50% - 15px); /* Ajusta el tamaño de las columnas */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    padding: 10px; /* Espaciado interno */
+    /*border: 1px solid #ccc; /* Opcional: para visualizar los límites */
+    /*background-color: #f9f9f9; /* Fondo para diferenciar las secciones */
+}
+
+#fourth h2{
+    margin: 0; 
+    padding: 0;
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center; 
+}
+
+#sixth{
+    display: flex;
+    flex-wrap: wrap-reverse; /* Envuelve en reversa */
+    padding: 0 10%; /* Espaciado horizontal */
+    align-items: center; /* Alinea verticalmente el contenido */
+    gap: 15px; /* Ajusta el espacio entre elementos */
+}
+
+#sixth > div {
+    flex: 1 1 calc(50% - 15px); /* Ajusta el tamaño de las columnas */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    padding: 10px; /* Espaciado interno */
+    /*border: 1px solid #ccc; /* Opcional: para visualizar los límites */
+    /*background-color: #f9f9f9; /* Fondo para diferenciar las secciones */
+}
+
+#second{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: center;
+    gap: 20px;
+}
+
+#second h2{
+    margin: 0; 
+    padding: 0;
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center; 
+}
+
+#second > div{
+    flex: 1 1 calc(25% - 20px); /* Ajusta el ancho (4 columnas en filas flexibles) */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    padding: 10px;
+}
+
+
+#fifth{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    text-align: center;
+    gap: 20px;
+}
+
+#fifth h2{
+    margin: 0; 
+    padding: 0;
+    flex: 1 1 100%;
+    width: 100%;
+    text-align: center; 
+}
+
+#fifth > div{
+    flex: 1 1 calc(25% - 20px); /* Ajusta el ancho (4 columnas en filas flexibles) */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+    padding: 10px;
+}
+
+#seventh{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+        padding: 30px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    #first{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #first{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}*/
+
+.divisionC{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
