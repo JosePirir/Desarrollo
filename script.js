@@ -174,8 +174,8 @@ document.getElementById("toggleLanguageButton").addEventListener("click", () => 
         },
         {
             selector: "footer",
-            es: "2025 ASOCCAM Guatemala. Todos los derechos reservados.",
-            en: "2025 ASOCCAM Guatemala. All rights reserved.",
+            es: '"Aun en la vejez fructificarán; Estarán vigorosos y verdes" - Salmos 92:14 | 2025 ASOCCAM Guatemala. Todos los derechos reservados.',
+            en: '"Even in old age they will bear fruit; They will be vigorous and green" - Psalms 92:14 | 2025 ASOCCAM Guatemala. All rights reserved.',
         },
     ];
 
